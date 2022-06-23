@@ -1,0 +1,109 @@
+/* *
+{
+    border: 2px solid red;
+} */
+body
+{
+    font-size: 1.125rem;
+    
+}
+span
+{
+    color: #B7832F;
+}
+p
+{
+    font-size: 1rem;
+}
+h2
+{
+font-size:1.5rem;
+color: #707070;
+}
+.container
+{
+   margin: 0 auto;/*align items to center and lets the size of items change when the screen size increases or decreases*/
+    max-width: 980px;
+    width: 90%;
+
+}
+h1
+{
+    text-align: center;
+    font-size: 3rem;
+}
+.container img
+{
+    width: 100%;
+    
+}
+.columns
+{
+    display: flex;
+    width: 100%;
+}
+   
+.col
+{
+   margin: 0.5em; 
+}
+.col1
+{
+    width: 75%;
+}
+
+.col3
+{
+    width:100%;
+    padding: .5em;
+    color:#fff;
+    background: #312614;
+
+}
+.column2 .col3
+{
+    width:21%;
+}
+@media only screen and (max-width:800px){
+    h1{
+        font-size: 2rem;
+        
+    }
+    .columns
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .col
+    {
+        width: 90%;
+    }
+    .column2 .col3
+    {
+        width: 90%;
+    }
+}
+@media only screen and (min-width:2560px)
+{
+h1{
+    font-size: 5rem;
+}
+p
+{
+font-size: 2.5rem;
+}
+h2{
+    font-size: 3rem;
+}
+    .container
+    {
+        max-width: 100%;
+    }
+    .columns
+    {
+        max-width: fit-content;
+    }
+    .column2 .col3
+    {margin-left: 20px;
+    }
+}
